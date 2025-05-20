@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Pessoal - Kauã dos Reis</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Barra de Navegação Principal - Contém links para todas as seções do site -->
+    <nav class="navbar">
+      <div class="nav-brand">CV - Kauã dos Reis</div>
+      <!-- Botão do menu mobile - Aparece apenas em telas pequenas -->
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <!-- Lista de links de navegação -->
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mim</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#education">Formação Educacional</a></li>
+        <li><a href="#experience">Experiência Profissional</a></li>
+        <li><a href="#languages">Idiomas</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+    <!-- Overlay para o menu mobile - Escurece o fundo quando o menu está aberto -->
+    <div class="nav-overlay"></div>
+
+    <!-- Seção Sobre Mim - Apresentação pessoal e foto de perfil -->
+    <section id="about" class="section">
+      <h2>Sobre mim</h2>
+      <div class="about-content">
+        <!-- Foto de perfil com estilo circular -->
+        <img
+          src="https://avatars.githubusercontent.com/u/78101033?v=4"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <!-- Texto de apresentação pessoal -->
+        <div class="about-text">
+          <p>
+            💻 Apaixonado por tecnologia, especialmente desenvolvimento de
+            software
+            <br />
+            🎓 Concluiu um curso técnico de desenvolvimento de sistemas no Etec
+            Adolpho Berezin
+            <br />
+            📖 Cursando Bacharelado em Engenharia de Software na UNINTER
+            <br />
+            📝 Aprendendo Kotlin para desenvolvimento mobile e backend
+            <br />
+            🚩 Trabalhando com React Native, Next.js e Ruby on Rails como
+            desenvolvedor Fullstack
+            <br />
+            🔭 Desenvolvendo o app mobile da Loovie e sua API
+            <br />
+            🌟 Linguagens principais: JavaScript, Ruby e Java
+            <br />
+            💖 Especialmente interessado em Desenvolvimento Mobile
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Portfólio - Exibição dos projetos desenvolvidos -->
+    <section id="portfolio" class="section">
+      <h2>Portfólio</h2>
+      <div class="portfolio-content">
+        <!-- Card do Projeto 1 -->
+        <div class="portfolio-item">
+          <img
+            src="assets/images/loovie.png"
+            alt="Loovie"
+            class="portfolio-img"
+          />
+          <div class="portfolio-info">
+            <h3>Loovie</h3>
+            <p class="project-description">
+              Inicialmente desenvolvido como trabalho de conclusão de curso, o
+              Loovie é um app mobile que permite aos usuários buscarem por
+              filmes e séries, compartilharem suas opiniões sobre eles e
+              receberem recomendações personalizadas.
+            </p>
+            <!-- Tags de tecnologias utilizadas no projeto -->
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Ruby on Rails</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <!-- Links para demo e código fonte -->
+            <div class="project-links">
+              <a
+                href="https://github.com/kauadrar/loovie-mobile"
+                class="project-link"
+                >Mobile Source Code</a
+              >
+              <a
+                href="https://github.com/kauadrar/loovie-api"
+                class="project-link"
+                >API Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card do Projeto 2 -->
+        <div class="portfolio-item">
+          <img
+            src="assets/images/flooxai.png"
+            alt="FlooxAI"
+            class="portfolio-img"
+          />
+          <div class="portfolio-info">
+            <h3>FlooxAI</h3>
+            <p class="project-description">
+              Projeto em que trabalhei como desenvolvedor Fullstack na empresa
+              FlooxAI.
+              <br />
+              "Seu primeiro assistente de mensagens profissional. Conecte suas
+              contas SaaS para começar a gerenciar seu negócio, leads, clientes
+              ou recursos humanos diretamente do seu aplicativo de mensagens
+              favorito. Suporte as melhores aplicações SaaS."
+            </p>
+            <!-- Tags de tecnologias utilizadas no projeto -->
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Ruby on Rails</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <!-- Links para demo e código fonte -->
+            <div class="project-links">
+              <a href="https://floox.ai" class="project-link"
+                >App Presentation</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card do Projeto 3 -->
+        <div class="portfolio-item">
+          <img
+            src="assets/images/eventfully.png"
+            alt="Eventfully"
+            class="portfolio-img"
+          />
+          <div class="portfolio-info">
+            <h3>Eventfully</h3>
+            <p class="project-description">
+              Projeto em que trabalhei como desenvolvedor Fullstack na empresa
+              FlooxAI.
+              <br />
+              "Eleve seus eventos com nossas soluções personalizadas projetadas
+              para formatos presenciais, híbridos e virtuais. Na Eventfully,
+              garantimos um planejamento sem falhas e entregamos experiências
+              excepcionais que cativam e inspiram seu público, independentemente
+              de como eles participam."
+            </p>
+            <!-- Tags de tecnologias utilizadas no projeto -->
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <!-- Links para demo e código fonte -->
+            <div class="project-links">
+              <a href="https://www.eventfully.ai" class="project-link"
+                >Website</a
+              >
+              <a
+                href="https://apps.apple.com/us/app/eventfully/id6535685968"
+                class="project-link"
+                >App Store</a
+              >
+              <a
+                href="https://play.google.com/store/apps/details?id=floox.ai.eventfully"
+                class="project-link"
+                >Play Store</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Formação Educacional - Histórico acadêmico -->
+    <section id="education" class="section">
+      <h2>Formação Educacional</h2>
+      <div class="education-content">
+        <!-- Item de formação 1 -->
+        <div class="education-item">
+          <h3>UNINTER</h3>
+          <p class="degree">Bacharelado em Engenharia de Software</p>
+          <p class="year">2024 - Present</p>
+          <p>
+            Atualmente cursando Bacharelado em Engenharia de Software na
+            UNINTER, onde estou aprendendo sobre desenvolvimento de software,
+            arquitetura de computadores, redes de computadores, banco de dados,
+            entre outros. Já concluí matérias como: Programação Orientada a
+            Objetos, Banco de Dados Relacionais, Lógica de Programação e
+            Algoritmos, Fundamentos da Computação, e muito mais.
+          </p>
+        </div>
+        <!-- Item de formação 2 -->
+        <div class="education-item">
+          <h3>Etec Adolpho Berezin</h3>
+          <p class="degree">Técnico em Desenvolvimento de Sistemas</p>
+          <p class="year">2020 - 2022</p>
+          <p>
+            Em minha formação no Ensino Médio com Habilitação Técnica
+            Profissional em Desenvolvimento de Sistemas, pela Etec Adolpho
+            Berezin, tive meu primeiro contato com a área de T.I., e com
+            profissionais experientes no ramo, os quais pude extrair o máximo de
+            conhecimento possível. Minha virada de chave foi ao desenvolver meu
+            TCC, pois aprendi na prática não só a aplicar meu conhecimento em
+            programação, mas também sobre as etapas essenciais na criação de um
+            sistema, como: Definir seu propósito e escopo, levantar requisitos,
+            definir suas regras de negócio, realizar a modelagem, e criar
+            protótipos de baixa e alta fidelidade. Além da experiência de
+            trabalhar em equipe criando e desenvolvendo uma ideia do zero, até
+            vendê-la como um produto. No âmbito técnico, fui introduzido ao
+            back-end e ao front-end, utilizando C#, PHP, Javascript, HTML, CSS,
+            React Native e SQL. Ademais, aprendi sobre Fundamentos
+            Computacionais, UI/UX, Quality Assurance, POO, criação e organização
+            de projetos, e muito mais.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Experiência Profissional - Histórico de trabalho -->
+    <section id="experience" class="section">
+      <h2>Experiência Profissional</h2>
+      <div class="experience-content">
+        <!-- Item de experiência 1 -->
+        <div class="experience-item">
+          <h3>FlooxAI</h3>
+          <p class="position">Desenvolvedor Fullstack</p>
+          <p class="year">2023 - Present</p>
+          <p>
+            Atuei como Desenvolvedor Fullstack, utilizando tanto de JavaScript
+            como TypeScript, trabalhei principalmente com React Native, onde
+            pude implementar recursos como: integração com APIs, Deeplink, push
+            notifications, realtime applications, animações, envio de mídias,
+            internacionalização, entre outros. Utilizei de bibliotecas como
+            Styled Components, React Query, React Native Reanimated, Redux, e
+            desenvolvi testes unitários, E2E e de integração utilizando Jest e
+            Detox. Ainda no desenvolvimento mobile também fui responsável por
+            lançamentos na Play Store e na App Store. Ressalto também minhas
+            experiências com aplicações em nuvem, tendo trabalhado com
+            plataformas como AWS, Google Cloud, Azure e Heroku. Já no web
+            frontend, tive ampla experiência com React, Next.js, CSS, Tailwind e
+            Sass. E no backend, através do Ruby on Rails e do Django Rest
+            Framework em Python, pude trabalhar com projetos legados,
+            autenticação, mapas, websocket, webhooks, Elasticsearch,
+            internacionalização, com APIs externas como OpenAI, Twilio, Ebay,
+            Shopify, Google Cloud, Microsoft Graph, entre outros, com OAuth para
+            Google, Microsoft, Apple, entre outros, background jobs com Redis,
+            Sidekiq e Celery, além de testes unitários, de integração e E2E.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Idiomas - Proficiência em diferentes idiomas -->
+    <section id="languages" class="section">
+      <h2>Idiomas</h2>
+      <div class="languages-content">
+        <!-- Item de idioma 1 -->
+        <div class="language-item">
+          <h3>🇧🇷 Portuguese</h3>
+          <div class="language-level">
+            <div class="level-bar" style="width: 100%"></div>
+          </div>
+          <p>Fluente</p>
+        </div>
+        <!-- Item de idioma 2 -->
+        <div class="language-item">
+          <h3>🇺🇸 Inglês</h3>
+          <div class="language-level">
+            <div class="level-bar" style="width: 80%"></div>
+          </div>
+          <p>Avançado</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

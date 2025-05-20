@@ -1,0 +1,378 @@
+/* Estilos base e reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Estilos da Barra de Navegação */
+.navbar {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #3498db;
+}
+
+/* Botão do menu mobile */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Estilos das Seções */
+.section {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* Estilos da Seção Sobre Mim */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 300px;
+}
+
+.about-text {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Estilos das Seções de Educação e Experiência */
+.education-content,
+.experience-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-item,
+.experience-item {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3,
+.experience-item h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.degree,
+.position,
+.year {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos da Seção de Portfólio */
+.portfolio-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 1rem;
+  justify-content: center;
+}
+
+.portfolio-item {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-info {
+  padding: 1.5rem;
+}
+
+.portfolio-info h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background-color: #3498db;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.875rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #2980b9;
+}
+
+/* Estilos da Seção de Idiomas */
+.languages-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.language-item {
+  flex: 1;
+  min-width: 200px;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.language-item h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.language-level {
+  background-color: #eee;
+  height: 10px;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+
+.level-bar {
+  background-color: #3498db;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.language-item p {
+  text-align: center;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Estilos do Formulário de Contato */
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    transition: right 0.3s ease;
+    margin: 0;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  /* Overlay do menu mobile */
+  .nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .nav-overlay.active {
+    display: block;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .portfolio-item {
+    flex: 1 1 100%;
+  }
+
+  .languages-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .language-item {
+    width: 100%;
+    max-width: 300px;
+  }
+}
